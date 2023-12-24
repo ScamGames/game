@@ -1,8 +1,7 @@
 /* From the :root element you can easily change the colors of the design, its size and so on. */
 :root {
-
   /* You can change the font family in the whole design here. (You need to add the font family to the codes.) */
-  --font_family: 'Inter', sans-serif;
+  --font_family: "Inter", sans-serif;
 
   /* You can change the font size here, is proportional to all texts. */
   --font_size: 16px;
@@ -121,8 +120,8 @@ body {
 }
 
 .header_svg_item:hover {
-  transform: scale(1.10);
-  transition: 0.10s ease;
+  transform: scale(1.1);
+  transition: 0.1s ease;
 }
 
 .header_svg_item + .header_svg_item {
@@ -144,7 +143,6 @@ body {
   color: var(--menu_text_color);
 }
 
-
 .header_nav_menu_list {
   padding-top: 1em;
   margin-left: 1em;
@@ -160,7 +158,7 @@ body {
   padding: 0.5em;
   border-radius: 0.3em;
   cursor: pointer;
-  transition: 0.10s ease;
+  transition: 0.1s ease;
   font-size: 1.1em;
 }
 
@@ -174,8 +172,9 @@ main {
   margin-bottom: auto;
 }
 
-#main_section_container_2, #main_section_container_3 {
- display: none;
+#main_section_container_2,
+#main_section_container_3 {
+  display: none;
 }
 
 .main_a_item {
@@ -207,6 +206,24 @@ main {
   cursor: pointer;
 }
 
+.main_button_item:hover {
+  color: var(--button_text_hover_color);
+  transform: scale(1.02);
+  transition: 0.1s ease;
+}
+.main_button_item .button_container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_button_item .button_container > i {
+  margin: 0 1em;
+}
+.main_button_item .button_container > p {
+  margin-right: 17rem;
+}
+
 .main_small_button_list {
   display: flex;
   flex-direction: row;
@@ -225,7 +242,7 @@ main {
 .main_button_item:hover {
   color: var(--button_text_hover_color);
   transform: scale(1.02);
-  transition: 0.10s ease;
+  transition: 0.1s ease;
 }
 
 .main_small_button_item {
@@ -238,6 +255,29 @@ main {
   cursor: pointer;
 }
 
+/*icons*/
+
+.fa-brands.fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 /* Footer Codes */
 
 .footer_div_item {
@@ -252,24 +292,31 @@ main {
   text-decoration: none;
 }
 
+.blured {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
 /* Responsive Codes */
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .main_text_item {
     width: 92vw;
   }
 
   .main_small_button_item {
-    width: calc(92vw / 2 - 5px);;
+    width: calc(92vw / 2 - 5px);
   }
 
   .main_button_item {
     width: 92vw;
   }
-  
+
   .header_h_item {
     width: 92vw;
     text-align: center;
   }
-  
 }
