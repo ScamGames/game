@@ -222,7 +222,7 @@ main {
   margin: 0 1em;
 }
 .main_button_item .button_container > p {
-  margin-right: 17rem;
+  /* margin-right: 17rem; */
 }
 
 .main_small_button_list {
