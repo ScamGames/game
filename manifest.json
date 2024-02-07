@@ -1,0 +1,61 @@
+{
+  "theme_color": "#EA181F",
+  "background_color": "#ffff",
+  "display_override": ["standalone", "minimal-ui"],
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Skam Cards",
+  "short_name": "Skam",
+  "description": "Where Strategy Meets Fun!",
+  "prefer_related_applications": true,
+  "icons": [
+    {
+      "src": "./img/manifest/maskable_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/manifest/maskable_icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./img/manifest-icons/screen.png",
+      "sizes": "1280x832",
+      "type": "image/gif",
+      "label": "Skam Cards"
+    },
+    {
+      "src": "./img/manifest-icons/screen.png",
+      "sizes": "1280x832",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Skam Cards"
+    },
+    {
+      "src": "./img/manifest-icons/screen-light.png",
+      "sizes": "1280x832",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Skam Cards"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "GameScore",
+      "short_name": "GameScore",
+      "description": "List of events planned for today",
+      "url": "/game/score.html",
+      "icons": [
+        {
+          "src": "./img/manifest-icons/SkamLogo-op-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
