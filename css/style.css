@@ -294,7 +294,7 @@ main {
   text-decoration: none;
 }
 
-.blured {
+.blurred {
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
