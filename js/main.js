@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     element.addEventListener("click", function (event) {
       event.preventDefault();
       Toastify({
-        text: "Coming soon",
+        text: "قريباً",
         destination:
           "https://www.instagram.com/skam.cards?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-        duration: 300,
+        duration: 500,
         position: "center",
         style: {
-          background: "#d3414d",
+          background: "#2f3645",
           borderRadius: "10px",
           padding: "10px 20px",
         },

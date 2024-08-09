@@ -1,13 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap");
+
 /* From the :root element you can easily change the colors of the design, its size and so on. */
 :root {
   /* You can change the font family in the whole design here. (You need to add the font family to the codes.) */
-  --font_family: "Inter", sans-serif;
+  // <uniquifier>: Use a unique and descriptive class name
+
+  /* --font-family: "DM Sans", "sans-serif"; */
+  --font-optical-sizing: auto;
+  --font-weight: 500;
+  --font-style: normal;
 
   /* You can change the font size here, is proportional to all texts. */
   --font_size: 16px;
 
   /* You can change the background color by typing the color code. (If you do not enter a background-image image, the background-color will be active.) */
-  --background_color: #ee8f97;
+  --main_color: #fff;
+  --background_color: #2f3645;
+  --white_color: #fff;
   /* --background_image: url("../img/wallpaper-pc.jpg"); */
   /* --background_image_mobile: url("../img/wallpaper.jpg"); */
 
@@ -50,11 +59,13 @@
 /* Basic Codes */
 
 body {
-  font: var(--font_size) var(--font_family);
-  font-weight: 400;
+  font-family: "DM Sans";
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  font-size: var(--font_size);
   line-height: 1.5;
-  /* background: var(--background_color) var(--background_image) no-repeat center; */
-  background: var(--background_color);
+  background: linear-gradient(0deg, rgb(30, 30, 30), rgb(100, 100, 100));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -199,8 +210,9 @@ main {
 }
 
 .main_button_item {
-  color: var(--button_text_color);
-  background-color: var(--button_background_color);
+  color: var(--main_color);
+  background-color: transparent;
+  border: 1px solid var(--white_color);
   width: 41em;
   border-radius: 1em;
   min-height: 3.7em;
@@ -209,7 +221,8 @@ main {
 }
 
 .main_button_item:hover {
-  color: var(--button_text_hover_color);
+  color: var(--background_color);
+  background-color: var(--white_color);
   transform: scale(1.02);
   transition: 0.1s ease;
 }
@@ -242,7 +255,7 @@ main {
 
 .main_small_button_item:hover,
 .main_button_item:hover {
-  color: var(--button_text_hover_color);
+  color: var(--background_color);
   transform: scale(1.02);
   transition: 0.1s ease;
 }
@@ -307,6 +320,12 @@ main {
 @media (max-width: 768px) {
   body {
     background: var(--background_color);
+    /* background: linear-gradient(
+      0deg,
+      rgba(47, 54, 69, 1) 15%,
+      rgba(245, 247, 248, 1) 100%
+    ); */
+    background: linear-gradient(0deg, rgb(30, 30, 30), rgb(100, 100, 100));
   }
 
   .main_text_item {
@@ -325,4 +344,9 @@ main {
     width: 92vw;
     text-align: center;
   }
+}
+
+.header_svg_item svg {
+  max-width: 2.1em;
+  max-height: 2.1em;
 }
