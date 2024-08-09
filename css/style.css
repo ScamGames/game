@@ -25,8 +25,8 @@
   --image_border_px: 3px;
 
   /* You can change the width and size of the picture by typing the number of pixels. */
-  --image_width: 140px;
-  --image_height: 140px;
+  --image_width: 100px;
+  --image_height: 100px;
 
   /* You can change the colors of the title and description section by typing the color codes. */
   --title_color: #fff;
@@ -344,6 +344,9 @@ main {
   .header_h_item {
     width: 92vw;
     text-align: center;
+  }
+  h1.header_h_item {
+    font-size: 1.5em;
   }
 }
 
